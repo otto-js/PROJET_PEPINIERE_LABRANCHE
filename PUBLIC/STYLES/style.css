@@ -1,0 +1,300 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+    margin: 0px;
+}
+
+h1{
+    color: white;
+    background-color: rgb(18, 104, 68);
+    padding:10px 0 10px 40px;
+    margin-top: 30px;
+    box-shadow: rgb(136, 148, 126) 2px 2px 4px;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+img {
+    border-radius: 13px;
+}
+
+#navigation {
+    position:relative;
+    margin:auto;
+    border-bottom:rgb(91, 165, 73) solid 1px;
+    background-color:white;
+    margin-top: 0px;
+    height: 70px;
+}
+
+#message {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(247, 244, 224);
+    color: green;
+    height: 120px;
+    top: -230px;
+    text-align: center;
+    font-size: 50px;
+    border: green solid 3px;
+}
+
+#feuille {
+    position: absolute;
+    display: block;
+    width: 50px;
+    top: 10px;
+    left: 15px;
+}
+
+#navLeft {
+    position:absolute;
+    left: 100px;
+    top: 0px;
+    left: 300px;
+}
+
+#titre {
+    position: absolute; 
+    top: 10px;
+    left: 70px;
+    font-size:18px;
+    color:green;
+    font-weight: bold;
+}
+
+#clickMe {
+    z-index: 2; 
+    position: absolute;
+    width: 30px;
+    top: 20px;
+    left: 1000px;
+}
+
+#panier {
+    position:absolute;
+    right: 35px;
+    top:0px;
+    transition: all 0.05s cubic-bezier(0, 0, 0 , 0);
+}
+
+@keyframes animate-panier {
+    0% { top: 0px;} 
+    50% { top: -6px;} 
+    100% { top: 0px} 
+}
+
+li {
+    display: inline-block;
+    background-color: rgb(206, 243, 42);
+    color: rgb(0, 53, 0);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.menuItems {
+    display:inline-block;
+    padding: 15px;
+    width:90px;
+}
+
+.menuItems:hover {
+    background-color: rgb(95, 131, 37);
+    font-weight: bold;
+    color: white;
+ }
+
+#totalPanier {
+    position: absolute;
+    top:-10px;
+    left:100px;
+    background-color:  rgb(249, 255, 251);
+    border-radius: 50%;
+    border:solid 1px  rgb(206, 243, 42);
+    padding: 8px;
+    width:20px;
+    text-align: center;
+}
+
+#contenuPageProduits #produitContainer{
+    position:relative;
+    background-color:rgb(255, 255, 255);
+    border: rgb(228, 228, 228) solid 1px;
+    width: 800px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 40px;
+}
+#contenuPageProduits #produitContainer:hover{
+   border: rgb(239, 255, 170) 1px solid;
+   box-shadow: rgb(230, 230, 230) 2px 2px 10px;
+}
+
+#contenuPageProduits #produitContainer img {
+    position:absolute;
+    float:left;
+    height: 90%;
+    padding: 7px;
+}
+
+#contenuProduitContainer{
+    padding-right: 10px;
+}
+
+#contenuPageProduits #descriptionContainer {
+    position:absolute;
+    left: 150px;
+    padding: 10px;
+}
+
+#qttePanierTable {
+    display:inline-block; 
+    padding: 15px;
+}
+
+.changeQtte {
+    background-color: rgb(248, 248, 248);
+    border: rgb(228, 228, 228) solid 1px;
+    outline: none;
+    width:25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+#stock {
+    color:white;
+    background-color:rgb(5, 141, 12);
+    border-radius: 2px;
+    padding: 8px;
+    width: 70px;
+    box-shadow: rgb(1, 43, 13) 2px 2px 4px;
+}
+
+#contenuPageProduits #stock {
+    position:absolute;
+    bottom: 0px;
+    left:-15px;
+}
+
+#contenuPageProduit {
+    position:relative;
+    top: 50px;
+    display:block;
+    margin:auto;
+    width: 500px;
+    height: 400px;
+}
+
+#contenuPageProduit #produitContainer{
+    background-color:rgb(255, 255, 255);
+    border: rgb(228, 228, 228) solid 1px;
+    width: auto;
+    height:500px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#contenuPageProduit #stock {
+    position:absolute;
+    top: 150px;
+    right: -10px;
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#plusMoins {
+    position:absolute;
+    right:130px;
+    bottom: 45px;
+}
+
+#contenuPageProduit #prixProduit {
+    position:absolute;
+    left:180px;
+    bottom: 150px;
+    font-size: 40px;
+    color:white;
+}
+
+#cboxContainer {
+    position: absolute;
+    top: 320px;
+    left: 285px;
+}
+
+#cboxQtte {
+    padding: 3px;
+    border: green solid 1px;
+    margin-left: 7px;
+}
+
+#btnAjouterAuPanier{
+    position:absolute;
+    bottom:0px;
+    left:285px;
+    padding: 10px;
+    background-color:rgb(164, 212, 52);
+    color:white;
+    font-weight: bold;
+    border:none;
+    border-radius: 4px;
+}
+
+#btnAjouterAuPanier:hover {
+    background-color: rgb(150, 194, 47);
+}
+
+#panierTable  {
+    width: 70%;
+    position: absolute;
+    padding: 15px;
+    top: 25%;
+    left:15%;
+}
+
+table, td, th {
+    border: solid 1px rgb(218, 218, 218);
+    background-color:rgb(250, 250, 250);
+    border-collapse: collapse;
+    text-align: center;
+    padding: 15px;
+}
+
+#imgPanier{
+    height: 100px;
+}
+
+#imgTrash{
+    height: 40px;
+}
+
+#erreur {
+    color: red;
+}
+ 
+#footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    background-color: rgb(171, 190, 129);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
